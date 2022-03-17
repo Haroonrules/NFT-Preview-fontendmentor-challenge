@@ -1,134 +1,130 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 :root {
-    --color-primary: hsl(215, 51%, 70%);
-    --color-secondary: hsl(178, 100%, 50%);
-    --color-background: hsl(217, 54%, 11%);
-    --color-card: hsl(216, 50%, 16%);
-    --color-line: hsl(215, 32%, 27%);
-    --color-white: #fff;
+  --color-primary: hsl(215, 51%, 70%);
+  --color-secondary: hsl(178, 100%, 50%);
+  --color-background: hsl(217, 54%, 11%);
+  --color-card: hsl(216, 50%, 16%);
+  --color-line: hsl(215, 32%, 27%);
+  --color-white: #fff;
 }
 *,
-*::before, 
+*::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 body {
-    margin: 3rem 0;
-    font-family: 'Outfit', sans-serif;
-    background-color: var(--color-background);
-    font-size: 1.8rem;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--color-primary);
-    line-height: 1.5;
+  align-items: center;
+  background-color: var(--color-background);
+  color: var(--color-primary);
+  display: flex;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.8rem;
+  height: auto;
+  justify-content: center;
+  line-height: 1.5;
+  margin: 3rem 0;
 }
 p {
-    font-weight: 300;
+  font-weight: 300;
 }
 a {
-    color: dodgerblue;
-    text-decoration: none;
+  color: dodgerblue;
+  text-decoration: none;
 }
 a:hover {
-    color: lightblue;
+  color: lightblue;
 }
 a:visited {
-    color: blueviolet;
+  color: blueviolet;
 }
 ul {
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    margin: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 1rem;
 }
 li {
-    transition: padding .2s;
+  transition: padding 0.2s;
 }
 li:hover {
-    padding-left: 2px;
+  padding-left: 2px;
 }
 hr {
-    border: 1px solid var(--color-line);
+  border: 1px solid var(--color-line);
 }
 span {
-    color: var(--color-white);
-    cursor: pointer;
-    transition: color .2s;
+  color: var(--color-white);
+  cursor: pointer;
+  transition: color 0.2s;
 }
 span:hover {
-    color: var(--color-secondary);
+  color: var(--color-secondary);
 }
 .item__eth {
-    color: var(--color-secondary);
-    list-style-image: url(/images/icon-ethereum.svg);
+  color: var(--color-secondary);
+  list-style-image: url(images/icon-ethereum.svg);
 }
 .item__clock {
-    list-style-image: url(/images/icon-clock.svg);
+  list-style-image: url(images/icon-clock.svg);
 }
 .main__container {
-    max-width: 375px;
-    margin: 0 auto;
-    border-radius: 15px;
-    padding: 3rem;
-    position: relative;
-    background-color: var(--color-card);
+  background-color: var(--color-card);
+  border-radius: 15px;
+  margin: 0 auto;
+  max-width: 375px;
+  padding: 3rem;
+  position: relative;
 }
 .main__heading {
-    margin: 1rem 0;
-    color: var(--color-white);
-    font-weight: 600;
-    cursor: pointer;
-    transition: color .2s;
+  color: var(--color-white);
+  cursor: pointer;
+  font-weight: 600;
+  margin: 1rem 0;
+  transition: color 0.2s;
 }
 .main__heading:hover {
-    color: var(--color-secondary);
+  color: var(--color-secondary);
 }
 .image__container {
-    position: relative;
-    cursor: pointer;
+  cursor: pointer;
+  position: relative;
 }
 .hover__container {
-    background-color: hsl(178, 100%, 50%, 60%);
-    height: 98%;
-    width: 100%;
-    position: absolute;
-    top: 0%;
-    opacity: 0;
-    transition: opacity .3s ease-in;
+  background-color: hsl(178, 100%, 50%, 60%);
+  height: 98%;
+  opacity: 0;
+  position: absolute;
+  top: 0%;
+  transition: opacity 0.3s ease-in;
+  width: 100%;
 }
 .hover__container:hover {
-    opacity: 1;
+  opacity: 1;
 }
 .hover__container img {
-    position: absolute;
-    top: 50%;
-    left: 40%;
+  left: 40%;
+  position: absolute;
+  top: 50%;
 }
 .image__eq {
-    width: 100%;
     border-radius: 10px;
+    width: 100%;
 }
 .attribution {
-    display: flex;
-    margin: 2rem 0;
+  display: flex;
+  margin: 2rem 0;
 }
 .profile__text {
-    margin: 5px 0 0 2rem;
+  margin: 5px 0 0 2rem;
 }
 .image__avatar {
-    width: 10%;
-    border: 1px solid var(--color-white);
-    border-radius: 100%;
-
-}
-@media screen and (min-width: 768px) {
-    
+  border-radius: 100%;
+  border: 1px solid var(--color-white);
+  width: 10%;
 }
